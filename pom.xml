@@ -25,18 +25,18 @@
   <parent>
     <groupId>org.jspringbot</groupId>
     <artifactId>jspringbot-libraries</artifactId>
-    <version>1.6-SNAPSHOT</version>
+    <version>1.9</version>
   </parent>
 
   <artifactId>jspringbot-test-data</artifactId>
-  <version>1.6-SNAPSHOT</version>
+  <version>1.10-SNAPSHOT</version>
   <name>jspringbot-test-data</name>
+  <description>JSpringBot Test Data Library</description>
 
   <properties>
     <libdoc.name>JSpringBot Test Data Library</libdoc.name>
     <libdoc.output>JSpringBotTestDataLibrary.html</libdoc.output>
   </properties>
-
 
   <licenses>
     <license>
@@ -46,17 +46,6 @@
       <comments>A business-friendly OSS license</comments>
     </license>
   </licenses>
-
-  <distributionManagement>
-    <repository>
-      <id>sonatype-nexus-staging</id>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-    </repository>
-    <snapshotRepository>
-      <id>sonatype-nexus-snapshots</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-    </snapshotRepository>
-  </distributionManagement>
 
   <scm>
     <connection>scm:git:https://github.com/jspringbot/jspringbot-test-data.git</connection>
@@ -88,6 +77,7 @@
     <dependency>
       <groupId>org.jspringbot</groupId>
       <artifactId>jspringbot-csv</artifactId>
+      <version>${jspringbot.version}</version>
     </dependency>
     <dependency>
       <groupId>net.sf.ehcache</groupId>
